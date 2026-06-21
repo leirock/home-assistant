@@ -1,0 +1,507 @@
+{
+  "version": 2,
+  "minor_version": 4,
+  "key": "knx/config_store.json",
+  "data": {
+    "entities": {
+      "light": {
+        "knx_es_01KVHNQWJ2WWJSDBBQK6CAM1TK": {
+          "entity": {
+            "name": "厨房灯",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/0/1",
+              "state": "1/0/2",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHNSJN44GSQ8J7VQ958APM3": {
+          "entity": {
+            "name": "客厅主灯",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/0/9",
+              "state": "1/0/10",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHNV9QJ5HZVQH5HJH0VBHFJ": {
+          "entity": {
+            "name": "过道灯",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/0/15",
+              "state": "1/0/16",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHNWQWRQKXCG435HADQS5DA": {
+          "entity": {
+            "name": "客厅灯带",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/0/13",
+              "state": "1/0/14",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHNXR09H5ZEF0ZPPECFPTA9": {
+          "entity": {
+            "name": "沙发灯",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/0/11",
+              "state": "1/0/12",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHNYK0V7P7Q3HK2ZQQEEGH7": {
+          "entity": {
+            "name": "玄关灯",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/0/5",
+              "state": "1/0/6",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHNZRAK7VY7XX0BBE9FSJQ2": {
+          "entity": {
+            "name": "餐桌灯",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/0/7",
+              "state": "1/0/8",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHP0GYKJWV8QZG6F11597CV": {
+          "entity": {
+            "name": "阳台灯",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/0/17",
+              "state": "1/0/18",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHP1HWSDE9GHDYZRTDRBPZP": {
+          "entity": {
+            "name": "主卧主灯",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/3/1",
+              "state": "1/3/2",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHP2B87TZYHV9R3ASWPR3MJ": {
+          "entity": {
+            "name": "主卧灯带",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/3/5",
+              "state": "1/3/6",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHP3QDS6ZQQRWQAQETPAJYW": {
+          "entity": {
+            "name": "主卧射灯",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/3/3",
+              "state": "1/3/4",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHP4JTAWAXG9PEZXZH2869E": {
+          "entity": {
+            "name": "次卧主灯",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/4/1",
+              "state": "1/4/2",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHP5DY5SD9GKHAEF8RZY5AG": {
+          "entity": {
+            "name": "次卧灯带",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/4/5",
+              "state": "1/4/6",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHP7P4F5RSEB04T2VNTHX2S": {
+          "entity": {
+            "name": "小房间主灯",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/5/1",
+              "state": "1/5/2",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        },
+        "knx_es_01KVHP9MKMN4EJV5Z0SV9FVV24": {
+          "entity": {
+            "name": "小房间灯带",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "1/5/5",
+              "state": "1/5/6",
+              "passive": []
+            },
+            "sync_state": true,
+            "color_temp_max": 6000.0,
+            "color_temp_min": 2700.0
+          }
+        }
+      },
+      "fan": {
+        "knx_es_01KVHPG83VY21XQ31HG68YGWGJ": {
+          "entity": {
+            "name": "新风",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_switch": {
+              "write": "14/1/7",
+              "state": "13/1/7",
+              "passive": []
+            },
+            "sync_state": true,
+            "speed": {
+              "ga_step": {
+                "write": "14/2/7",
+                "state": "13/2/7",
+                "passive": []
+              },
+              "max_step": 3.0
+            }
+          }
+        }
+      },
+      "climate": {
+        "knx_es_01KVHQC1AX8DXS4426FK214XSR": {
+          "entity": {
+            "name": "客厅空调",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_on_off": {
+              "write": "12/1/2",
+              "state": "11/1/2",
+              "passive": []
+            },
+            "ga_fan_speed": {
+              "write": "12/3/2",
+              "dpt": "5.010",
+              "state": "11/3/2",
+              "passive": []
+            },
+            "fan_max_step": 5,
+            "fan_zero_mode": "auto",
+            "target_temperature": {
+              "ga_temperature_target": {
+                "write": "12/4/2",
+                "state": "11/4/2",
+                "passive": []
+              },
+              "min_temp": 16.0,
+              "max_temp": 32.0,
+              "temperature_step": 1.0
+            },
+            "ga_temperature_current": {
+              "state": "1/7/221",
+              "passive": []
+            },
+            "default_controller_mode": "cool",
+            "sync_state": true,
+            "ga_humidity_current": {
+              "state": "1/7/222",
+              "passive": []
+            }
+          }
+        },
+        "knx_es_01KVHS4CFD779AWFH877YPSW87": {
+          "entity": {
+            "name": "书房空调",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_temperature_current": {
+              "state": "1/7/221",
+              "passive": []
+            },
+            "target_temperature": {
+              "ga_temperature_target": {
+                "write": "12/4/6",
+                "state": "11/4/6",
+                "passive": []
+              },
+              "min_temp": 16.0,
+              "max_temp": 32.0,
+              "temperature_step": 1.0
+            },
+            "ga_on_off": {
+              "write": "12/1/6",
+              "state": "11/1/6",
+              "passive": []
+            },
+            "default_controller_mode": "cool",
+            "fan_zero_mode": "auto",
+            "sync_state": true,
+            "ga_humidity_current": {
+              "state": "1/7/222",
+              "passive": []
+            },
+            "ga_fan_speed": {
+              "write": "12/3/6",
+              "dpt": "5.010",
+              "state": "11/3/6",
+              "passive": []
+            },
+            "fan_max_step": 5
+          }
+        },
+        "knx_es_01KVHXVJJ95PAKECHS9MDSC3VD": {
+          "entity": {
+            "name": "主卧空调",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_temperature_current": {
+              "state": "1/3/221",
+              "passive": []
+            },
+            "ga_humidity_current": {
+              "state": "1/3/222",
+              "passive": []
+            },
+            "target_temperature": {
+              "ga_temperature_target": {
+                "write": "12/4/3",
+                "state": "11/4/3",
+                "passive": []
+              },
+              "min_temp": 16.0,
+              "max_temp": 32.0,
+              "temperature_step": 1.0
+            },
+            "ga_on_off": {
+              "write": "12/1/3",
+              "state": "11/1/3",
+              "passive": []
+            },
+            "ga_fan_speed": {
+              "write": "12/3/3",
+              "dpt": "5.010",
+              "state": "11/3/3",
+              "passive": []
+            },
+            "fan_max_step": 5,
+            "fan_zero_mode": "auto",
+            "default_controller_mode": "cool",
+            "sync_state": true
+          }
+        },
+        "knx_es_01KVHXZ18H45JWECTX9W7KD70N": {
+          "entity": {
+            "name": "次卧空调",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_temperature_current": {
+              "state": "1/4/221",
+              "passive": []
+            },
+            "ga_humidity_current": {
+              "state": "1/4/222",
+              "passive": []
+            },
+            "target_temperature": {
+              "ga_temperature_target": {
+                "write": "12/4/4",
+                "state": "11/4/4",
+                "passive": []
+              },
+              "min_temp": 16.0,
+              "max_temp": 32.0,
+              "temperature_step": 1.0
+            },
+            "ga_on_off": {
+              "write": "12/1/4",
+              "state": "11/1/4",
+              "passive": []
+            },
+            "ga_fan_speed": {
+              "write": "12/3/4",
+              "dpt": "5.010",
+              "state": "11/3/4",
+              "passive": []
+            },
+            "fan_max_step": 5,
+            "fan_zero_mode": "auto",
+            "default_controller_mode": "cool",
+            "sync_state": true
+          }
+        },
+        "knx_es_01KVHY1QCG8Y5Q0ACQ3Z3DXTE3": {
+          "entity": {
+            "name": "小房间空调",
+            "entity_category": null,
+            "device_info": null
+          },
+          "knx": {
+            "ga_temperature_current": {
+              "state": "1/5/221",
+              "passive": []
+            },
+            "ga_humidity_current": {
+              "state": "1/5/222",
+              "passive": []
+            },
+            "target_temperature": {
+              "ga_temperature_target": {
+                "write": "12/4/5",
+                "state": "11/4/5",
+                "passive": []
+              },
+              "min_temp": 16.0,
+              "max_temp": 32.0,
+              "temperature_step": 1.0
+            },
+            "ga_on_off": {
+              "write": "12/1/5",
+              "state": "11/1/5",
+              "passive": []
+            },
+            "ga_fan_speed": {
+              "write": "12/3/5",
+              "dpt": "5.010",
+              "state": "11/3/5",
+              "passive": []
+            },
+            "fan_max_step": 5,
+            "fan_zero_mode": "auto",
+            "default_controller_mode": "cool",
+            "sync_state": true
+          }
+        }
+      },
+      "number": {},
+      "sensor": {}
+    },
+    "expose": {},
+    "time_server": {}
+  }
+}

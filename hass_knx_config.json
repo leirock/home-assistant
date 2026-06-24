@@ -315,7 +315,7 @@
               },
               "min_temp": 16.0,
               "max_temp": 32.0,
-              "temperature_step": 1.0
+              "temperature_step": 0.5
             },
             "ga_temperature_current": {
               "state": "1/7/221",
@@ -325,6 +325,10 @@
             "sync_state": true,
             "ga_humidity_current": {
               "state": "1/7/222",
+              "passive": []
+            },
+            "ga_active": {
+              "state": "11/1/2",
               "passive": []
             }
           }
@@ -348,7 +352,7 @@
               },
               "min_temp": 16.0,
               "max_temp": 32.0,
-              "temperature_step": 1.0
+              "temperature_step": 0.5
             },
             "ga_on_off": {
               "write": "12/1/6",
@@ -368,7 +372,11 @@
               "state": "11/3/6",
               "passive": []
             },
-            "fan_max_step": 5
+            "fan_max_step": 5,
+            "ga_active": {
+              "state": "11/1/6",
+              "passive": []
+            }
           }
         },
         "knx_es_01KVHXVJJ95PAKECHS9MDSC3VD": {
@@ -394,7 +402,7 @@
               },
               "min_temp": 16.0,
               "max_temp": 32.0,
-              "temperature_step": 1.0
+              "temperature_step": 0.5
             },
             "ga_on_off": {
               "write": "12/1/3",
@@ -410,7 +418,11 @@
             "fan_max_step": 5,
             "fan_zero_mode": "auto",
             "default_controller_mode": "cool",
-            "sync_state": true
+            "sync_state": true,
+            "ga_active": {
+              "state": "11/1/3",
+              "passive": []
+            }
           }
         },
         "knx_es_01KVHXZ18H45JWECTX9W7KD70N": {
@@ -436,7 +448,7 @@
               },
               "min_temp": 16.0,
               "max_temp": 32.0,
-              "temperature_step": 1.0
+              "temperature_step": 0.5
             },
             "ga_on_off": {
               "write": "12/1/4",
@@ -452,7 +464,11 @@
             "fan_max_step": 5,
             "fan_zero_mode": "auto",
             "default_controller_mode": "cool",
-            "sync_state": true
+            "sync_state": true,
+            "ga_active": {
+              "state": "11/1/4",
+              "passive": []
+            }
           }
         },
         "knx_es_01KVHY1QCG8Y5Q0ACQ3Z3DXTE3": {
@@ -478,7 +494,7 @@
               },
               "min_temp": 16.0,
               "max_temp": 32.0,
-              "temperature_step": 1.0
+              "temperature_step": 0.5
             },
             "ga_on_off": {
               "write": "12/1/5",
@@ -494,7 +510,11 @@
             "fan_max_step": 5,
             "fan_zero_mode": "auto",
             "default_controller_mode": "cool",
-            "sync_state": true
+            "sync_state": true,
+            "ga_active": {
+              "state": "11/1/5",
+              "passive": []
+            }
           }
         }
       },

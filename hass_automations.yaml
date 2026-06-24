@@ -1,301 +1,590 @@
-- alias: 虚拟事件分流
-  description: 监听小米中枢网关虚拟事件实体状态变化并执行动作
+- id: '1782021510661'
+  alias: 灯光语音控制
+  description: 监听小米中枢网关虚拟事件变化并执行动作
   triggers:
   - trigger: state
-    entity_id: event.xiaomi_gateway_vitural_event
+    entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+  conditions: []
   actions:
   - choose:
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开主卧灯
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.zhu_wo_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭主卧灯
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.zhu_wo_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开主卧射灯
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.zhu_wo_she_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭主卧射灯
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.zhu_wo_she_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开主卧灯带
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.zhu_wo_deng_dai
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭主卧灯带
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.zhu_wo_deng_dai
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开次卧灯
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.ci_wo_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭次卧灯
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.ci_wo_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开次卧灯带
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.ci_wo_deng_dai
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭次卧灯带
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.ci_wo_deng_dai
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开小房间灯
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.xiao_fang_jian_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭小房间灯
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.xiao_fang_jian_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开小房间灯带
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.xiao_fang_jian_deng_dai
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭小房间灯带
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.xiao_fang_jian_deng_dai
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 打开过道灯
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.guo_dao_deng
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 关闭过道灯
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.guo_dao_deng
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开厨房灯
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.chu_fang_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭厨房灯
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.chu_fang_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开餐桌灯
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.can_zhuo_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭餐桌灯
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.can_zhuo_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开玄关灯
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.xuan_guan_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭玄关灯
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.xuan_guan_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开客厅灯
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.ke_ting_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭客厅灯
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.ke_ting_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开客厅灯带
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.ke_ting_deng_dai
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭客厅灯带
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.ke_ting_deng_dai
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开沙发灯
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.sha_fa_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭沙发灯
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.sha_fa_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 打开阳台灯
         attribute: 事件名称
       sequence:
       - action: light.turn_on
         target:
           entity_id: light.yang_tai_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 关闭阳台灯
         attribute: 事件名称
       sequence:
       - action: light.turn_off
         target:
           entity_id: light.yang_tai_deng
-        data: {}
     - conditions:
       - condition: state
-        entity_id: event.xiaomi_gateway_vitural_event
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
         state: 再见
         attribute: 事件名称
       sequence:
       - action: light.turn_off
-        data: {}
         target:
           area_id:
           - ke_ting
           - chu_fang
           - yang_tai
+  mode: parallel
+  max: 3
+- id: '1782056554564'
+  alias: 客厅小爱播放电视广播
+  description: 监听小米中枢网关虚拟事件并播放电视广播
+  triggers:
+  - trigger: state
+    entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+  actions:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 打开新闻频道
+        attribute: 事件名称
+      sequence:
+      - action: media_player.play_media
+        data:
+          media:
+            media_content_id: https://piccpndali.v.myalicdn.com/audio/cctv13_2.m3u8
+            media_content_type: music
+        target:
+          entity_id: media_player.xiaomi_oh2p_9890_play_control
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 打开中国之声
+        attribute: 事件名称
+      sequence:
+      - action: media_player.play_media
+        data:
+          media:
+            media_content_id: https://ngcdn002.cnr.cn/live/zgzs/index.m3u8
+            media_content_type: music
+        target:
+          entity_id: media_player.xiaomi_oh2p_9890_play_control
+  mode: single
+- id: '1782113018369'
+  alias: 开空调就开新风
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - climate.ke_ting_aircon
+    attribute: hvac_action
+    to:
+    - cooling
+  - trigger: state
+    entity_id:
+    - climate.ci_wo_aircon
+    attribute: hvac_action
+    to:
+    - cooling
+  - trigger: state
+    entity_id:
+    - climate.zhu_wo_aircon
+    attribute: hvac_action
+    to:
+    - cooling
+  - trigger: state
+    entity_id:
+    - climate.xiao_fang_jian_aircon
+    attribute: hvac_action
+    to:
+    - cooling
+  conditions: []
+  actions:
+  - action: fan.turn_on
+    metadata: {}
+    target:
+      entity_id: fan.xin_feng
+    data:
+      percentage: 100
+  mode: single
+- id: '1782113194274'
+  alias: 全部关空调就关新风
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - climate.ke_ting_aircon
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - climate.ci_wo_aircon
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - climate.zhu_wo_aircon
+    to:
+    - 'off'
+  - trigger: state
+    entity_id:
+    - climate.xiao_fang_jian_aircon
+    to:
+    - 'off'
+  conditions:
+  - condition: state
+    entity_id: climate.zhu_wo_aircon
+    state:
+    - 'off'
+  - condition: state
+    entity_id: climate.ci_wo_aircon
+    state:
+    - 'off'
+  - condition: state
+    entity_id: climate.xiao_fang_jian_aircon
+    state:
+    - 'off'
+  - condition: state
+    entity_id: climate.ke_ting_aircon
+    state:
+    - 'off'
+  actions:
+  - action: fan.turn_off
+    metadata: {}
+    target:
+      entity_id: fan.xin_feng
+    data: {}
+  mode: queued
+  max: 4
+- id: '1782131907161'
+  alias: 主卧灯光控制
+  description: 监听具体房间小爱音箱对话变化并执行动作
+  triggers:
+  - trigger: state
+    entity_id:
+    - sensor.xiaomi_l05c_c383_conversation
+  conditions:
+  - condition: template
+    value_template: '{{ (trigger.to_state|default(0)) and as_timestamp(now()) -
+
+      as_timestamp(trigger.to_state.attributes.timestamp) < 20 }}'
+    enabled: true
+  actions:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 打开主灯
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.zhu_wo_deng
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 关闭主灯
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.zhu_wo_deng
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 打开灯带
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.zhu_wo_deng_dai
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 关闭灯带
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.zhu_wo_deng_dai
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 打开射灯
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.zhu_wo_she_deng
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 关闭射灯
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.zhu_wo_she_deng
+  mode: single
+- id: '1782150256430'
+  alias: 次卧灯光控制
+  description: 监听具体房间小爱音箱对话变化并执行动作
+  triggers:
+  - trigger: state
+    entity_id:
+    - sensor.xiaomi_l05c_2713_conversation
+  conditions:
+  - condition: template
+    value_template: '{{ (trigger.to_state|default(0)) and as_timestamp(now()) -
+
+      as_timestamp(trigger.to_state.attributes.timestamp) < 20 }}'
+    enabled: true
+  actions:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 打开主灯
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.ci_wo_deng
+        data: {}
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 关闭主灯
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.ci_wo_deng
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 打开灯带
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.ci_wo_deng_dai
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 关闭灯带
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.ci_wo_deng_dai
+  mode: single
+- id: '1782150419746'
+  alias: 客厅灯光控制
+  description: 监听具体房间小爱音箱对话变化并执行动作
+  triggers:
+  - trigger: state
+    entity_id:
+    - sensor.xiaomi_oh2p_9890_conversation
+  conditions:
+  - condition: template
+    value_template: '{{ (trigger.to_state|default(0)) and as_timestamp(now()) -
+
+      as_timestamp(trigger.to_state.attributes.timestamp) < 20 }}'
+    enabled: true
+  actions:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 打开主灯
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.key_ting_deng
+        data: {}
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 关闭主灯
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.ke_ting_deng
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 打开灯带
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.ke_ting_deng_dai
+    - conditions:
+      - condition: state
+        entity_id: event.xiaomi_cn_1191729470_hub1_virtual_event_e_4_1
+        state: 关闭灯带
+        attribute: 事件名称
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.ke_ting_deng_dai
   mode: single
